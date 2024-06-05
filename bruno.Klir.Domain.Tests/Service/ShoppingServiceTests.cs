@@ -1,30 +1,23 @@
 ﻿using bruno.Klir.Domain.Common.Interfaces.Persistence;
 using bruno.Klir.Domain.Services;
-using bruno.Klir.Domain.Shopping.ValueObjects;
 using bruno.Klir.Domain.Shopping;
+using bruno.Klir.Domain.Shopping.ValueObjects;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using bruno.Klir.Domain.Common.Interfaces;
-using bruno.Klir.Domain.Common;
-using bruno.Klir.Domain.Factories.Promotion;
-using bruno.Klir.Domain.Product.Entities;
-using bruno.Klir.Domain.Factories.Promotion.Type;
+using System.Reflection.Metadata;
 
 namespace bruno.Klir.Domain.Tests.Service
 {
     public class ShoppingServiceTests
     {
         private readonly Mock<IShoppingGroupRepository> _mockRepository;
+        private readonly Mock<IProductRepository> _mockProductRepository;
         private readonly ShoppingService _shoppingService;
 
         public ShoppingServiceTests()
         {
             _mockRepository = new Mock<IShoppingGroupRepository>();
-            //_shoppingService = new ShoppingService(_mockRepository.Object);
+            _mockProductRepository = new Mock<IProductRepository>();
+            _shoppingService = new ShoppingService(_mockRepository.Object, _mockProductRepository.Object);
         }
 
         [Fact]
@@ -35,10 +28,8 @@ namespace bruno.Klir.Domain.Tests.Service
                 .ReturnsAsync((ShoppingGroup)null);
 
             // Act
-            var result = await _shoppingService.RecalculatePrice(new ShoppingGroupId());
-
-            // Assert
-            Assert.Null(result);
+            var exception = await Assert.ThrowsAsync<Exception>(() => _shoppingService.RecalculatePrice(new ShoppingGroupId()));
+            Assert.Equal("Database error", exception.Message);
         }
     }
 }

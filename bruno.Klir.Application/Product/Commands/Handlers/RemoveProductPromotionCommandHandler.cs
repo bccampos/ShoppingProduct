@@ -29,7 +29,7 @@ namespace bruno.Klir.Application.Product.Commands.Handlers
 
             _productRepository.Update(product);
 
-            await UnitOfWork(_productRepository.UnitOfWork);
+            //await UnitOfWork(_productRepository.UnitOfWork);
 
             return Result.Ok();
         }

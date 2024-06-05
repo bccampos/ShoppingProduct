@@ -2,6 +2,7 @@
 using bruno.Klir.Application.Shopping.Commands.Handlers;
 using bruno.Klir.Domain.Common.Interfaces;
 using bruno.Klir.Domain.Common.Interfaces.Persistence;
+using bruno.Klir.Domain.Models;
 using bruno.Klir.Domain.Product.Entities;
 using bruno.Klir.Domain.Product.ValueObjects;
 using bruno.Klir.Domain.Shopping;
@@ -20,6 +21,7 @@ namespace bruno.Klir.Application.Tests.Shopping
         {
             _shoppingRepositoryMock = new Mock<IShoppingGroupRepository>();
             _shoppingServiceMock = new Mock<IShoppingService>();
+
             _handler = new CreateShoppingCommandHandler(_shoppingRepositoryMock.Object, _shoppingServiceMock.Object);
         }
 

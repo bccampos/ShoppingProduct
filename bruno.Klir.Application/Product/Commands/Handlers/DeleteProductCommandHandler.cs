@@ -7,7 +7,7 @@ using MediatR;
 
 namespace bruno.Klir.Application.Product.Commands.Handlers
 {
-    public class DeleteProductCommandHandler : CommandHandler, IRequestHandler<DeleteProductCommand, Result>
+    public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand, Result>
     {
         private readonly IProductRepository _productRepository;
 
@@ -26,8 +26,6 @@ namespace bruno.Klir.Application.Product.Commands.Handlers
             }
             
             _productRepository.Delete(product);
-
-            await UnitOfWork(_productRepository.UnitOfWork);
 
             return Result.Ok();
 

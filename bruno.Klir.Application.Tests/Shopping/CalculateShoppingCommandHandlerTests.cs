@@ -13,13 +13,15 @@ namespace bruno.Klir.Application.Tests.Shopping
     {
         private readonly Mock<IShoppingGroupRepository> _shoppingRepositoryMock;
         private readonly Mock<IShoppingService> _shoppingServiceMock;
+        private readonly Mock<IProductRepository> _productRepository; 
         private readonly CalculateShoppingCommandHandler _handler;
 
         public CalculateShoppingCommandHandlerTests()
         {
             _shoppingRepositoryMock = new Mock<IShoppingGroupRepository>();
             _shoppingServiceMock = new Mock<IShoppingService>();
-            //_handler = new CalculateShoppingCommandHandler(_shoppingRepositoryMock.Object, _shoppingServiceMock.Object);
+            _productRepository = new Mock<IProductRepository>();
+            _handler = new CalculateShoppingCommandHandler(_shoppingRepositoryMock.Object, _shoppingServiceMock.Object, _productRepository.Object);
         }
 
         [Fact]

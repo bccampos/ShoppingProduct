@@ -28,7 +28,7 @@ namespace bruno.Klir.Application.Shopping.Commands.Handlers
 
             _shoppingRepository.Update(shoppingGroup);
 
-            await UnitOfWork(_shoppingRepository.UnitOfWork);
+            //await UnitOfWork(_shoppingRepository.UnitOfWork);
 
             return Result.Ok();
         }

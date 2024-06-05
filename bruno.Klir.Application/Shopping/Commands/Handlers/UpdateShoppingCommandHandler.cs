@@ -56,7 +56,7 @@ namespace bruno.Klir.Application.Shopping.Commands.Handlers
             }
 
             _shoppingRepository.Update(shoppingGroup);
-            await UnitOfWork(_shoppingRepository.UnitOfWork);
+            //await UnitOfWork(_shoppingRepository.UnitOfWork);
 
             //TODO: Add the mappear
             return Result.Ok<ShoppingResult>(ShoppingResult.ToShoppingResult(shoppingGroup));

@@ -27,7 +27,7 @@ namespace bruno.Klir.Domain.Tests.Product
             Assert.Equal(_price, product.Price);
             Assert.Equal(_quantity, product.Quantity);
             Assert.Equal(_promotionId, product.PromotionId);
-            Assert.Equal(true, product.IsActive);
+            Assert.Equal(false, product.IsActive);
         }
 
         [Fact]
