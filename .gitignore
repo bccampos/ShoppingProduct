@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/bruno.Klir/webapi/bin/Debug/net7.0
+/bruno.Klir/webapi/obj
+/bruno.Klir.Application/bin/Debug/net7.0
+/bruno.Klir.Application/obj
+/bruno.Klir.Application.Tests/bin/Debug/net7.0
+/bruno.Klir.Application.Tests/obj
+/bruno.Klir.Architecture.Tests/obj
+/bruno.Klir.Architecture.Tests/bin/Debug/net7.0
+/bruno.Klir.Contracts/obj
+/bruno.Klir.Contracts/bin/Debug/net7.0
+/bruno.Klir.Domain/bin/Debug/net7.0
+/bruno.Klir.Domain/obj
+/bruno.Klir.Domain.Tests/bin/Debug/net7.0
+/bruno.Klir.Domain.Tests/obj
+/bruno.Klir.Infrastructure/obj
+/bruno.Klir.Infrastructure/bin/Debug/net7.0
