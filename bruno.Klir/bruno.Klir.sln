@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bruno.Klir.WebApi", "webapi\bruno.Klir.WebApi.csproj", "{D1E2BD5E-CA17-4A23-9B2E-67DAA9C729F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{5D136CC4-0A7A-40FE-B7C6-200F9C0C0B49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - WebAPI", "1 - WebAPI", "{1F8B5ABF-552C-4C5D-860F-C37CF5633709}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{26A3FC76-F3DE-4C79-A4C0-442A3D780CB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bruno.Klir.Application", "..\bruno.Klir.Application\bruno.Klir.Application.csproj", "{B9E2860C-A1B8-4E9B-A04D-2013FBE3EF37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bruno.Klir.Contracts", "..\bruno.Klir.Contracts\bruno.Klir.Contracts.csproj", "{2A31D4E7-A5AD-4B54-92EF-CA9185EE27E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bruno.Klir.Domain", "..\bruno.Klir.Domain\bruno.Klir.Domain.csproj", "{A425FCBA-D580-4D14-9442-DF6047C9FB07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bruno.Klir.Infrastructure", "..\bruno.Klir.Infrastructure\bruno.Klir.Infrastructure.csproj", "{0E72D3C9-7424-4415-92E4-2A7133EB6F80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CF5AA876-5EFE-4414-84FD-E8E50EE9B349}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bruno.Klir.Architecture.Tests", "..\bruno.Klir.Architecture.Tests\bruno.Klir.Architecture.Tests.csproj", "{34716684-F73C-4A66-BA0B-89494F46716C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bruno.Klir.Application.Tests", "..\bruno.Klir.Application.Tests\bruno.Klir.Application.Tests.csproj", "{62490D76-7542-4A60-B23F-7A8F5E9B80C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bruno.Klir.Domain.Tests", "..\bruno.Klir.Domain.Tests\bruno.Klir.Domain.Tests.csproj", "{13BB3BF4-D33A-4270-BD9F-7634EDFB343C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1E2BD5E-CA17-4A23-9B2E-67DAA9C729F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E2BD5E-CA17-4A23-9B2E-67DAA9C729F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E2BD5E-CA17-4A23-9B2E-67DAA9C729F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E2BD5E-CA17-4A23-9B2E-67DAA9C729F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E2860C-A1B8-4E9B-A04D-2013FBE3EF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E2860C-A1B8-4E9B-A04D-2013FBE3EF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E2860C-A1B8-4E9B-A04D-2013FBE3EF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E2860C-A1B8-4E9B-A04D-2013FBE3EF37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A31D4E7-A5AD-4B54-92EF-CA9185EE27E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A31D4E7-A5AD-4B54-92EF-CA9185EE27E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A31D4E7-A5AD-4B54-92EF-CA9185EE27E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A31D4E7-A5AD-4B54-92EF-CA9185EE27E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A425FCBA-D580-4D14-9442-DF6047C9FB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A425FCBA-D580-4D14-9442-DF6047C9FB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A425FCBA-D580-4D14-9442-DF6047C9FB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A425FCBA-D580-4D14-9442-DF6047C9FB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E72D3C9-7424-4415-92E4-2A7133EB6F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E72D3C9-7424-4415-92E4-2A7133EB6F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E72D3C9-7424-4415-92E4-2A7133EB6F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E72D3C9-7424-4415-92E4-2A7133EB6F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34716684-F73C-4A66-BA0B-89494F46716C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34716684-F73C-4A66-BA0B-89494F46716C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34716684-F73C-4A66-BA0B-89494F46716C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34716684-F73C-4A66-BA0B-89494F46716C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62490D76-7542-4A60-B23F-7A8F5E9B80C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62490D76-7542-4A60-B23F-7A8F5E9B80C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62490D76-7542-4A60-B23F-7A8F5E9B80C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62490D76-7542-4A60-B23F-7A8F5E9B80C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BB3BF4-D33A-4270-BD9F-7634EDFB343C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BB3BF4-D33A-4270-BD9F-7634EDFB343C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BB3BF4-D33A-4270-BD9F-7634EDFB343C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BB3BF4-D33A-4270-BD9F-7634EDFB343C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D1E2BD5E-CA17-4A23-9B2E-67DAA9C729F2} = {1F8B5ABF-552C-4C5D-860F-C37CF5633709}
+		{B9E2860C-A1B8-4E9B-A04D-2013FBE3EF37} = {26A3FC76-F3DE-4C79-A4C0-442A3D780CB3}
+		{2A31D4E7-A5AD-4B54-92EF-CA9185EE27E6} = {26A3FC76-F3DE-4C79-A4C0-442A3D780CB3}
+		{A425FCBA-D580-4D14-9442-DF6047C9FB07} = {26A3FC76-F3DE-4C79-A4C0-442A3D780CB3}
+		{0E72D3C9-7424-4415-92E4-2A7133EB6F80} = {26A3FC76-F3DE-4C79-A4C0-442A3D780CB3}
+		{CF5AA876-5EFE-4414-84FD-E8E50EE9B349} = {26A3FC76-F3DE-4C79-A4C0-442A3D780CB3}
+		{34716684-F73C-4A66-BA0B-89494F46716C} = {CF5AA876-5EFE-4414-84FD-E8E50EE9B349}
+		{62490D76-7542-4A60-B23F-7A8F5E9B80C7} = {CF5AA876-5EFE-4414-84FD-E8E50EE9B349}
+		{13BB3BF4-D33A-4270-BD9F-7634EDFB343C} = {CF5AA876-5EFE-4414-84FD-E8E50EE9B349}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A5A1923-0D23-4BC4-AC99-34030E61E14E}
+	EndGlobalSection
+EndGlobal
