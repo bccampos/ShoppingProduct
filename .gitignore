@@ -19,3 +19,5 @@
 /bruno.Klir.Infrastructure/obj
 /bruno.Klir.Infrastructure/bin/Debug/net7.0
 /.vs
+/bruno.Klir/.vs
+/bruno.Klir/ui/.vs
